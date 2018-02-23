@@ -11,16 +11,41 @@
 </head>
 <body>
 <form>
-<div>
-    <label>详细地址：</label>
-    <input type="text" id="address" style="width: 200px">
-    <label>*具体到楼栋单元门牌号</label>
-    <br>
-    <label>地图坐标：</label>
-    <input type="text" id="addressmap" onfocusout="parseaddress()" style="width: 200px">
-    <label>*输入详细的地图可识别的地址</label>
-    <input type="text" id="addresspoint" hidden></input>
-<div id="allmap" style="width: 300px;height: 300px;"></div>
+<div style="position: absolute; width: 80% ;height: 80%;margin-top: 5%;margin-left: 5%;border: solid black 1px;margin-inside: 10px 10px 10px 10px">
+    <table>
+        <tr>
+            <td><label>姓名：</label></td>
+            <td><input type="text" id="name" style="width: 200px"></td>
+        </tr>
+        <tr>
+            <td>    <label>性别：</label></td>
+            <td>    <input type="radio" name="sex" value="male">male
+                <input type="radio" name="sex" value="female">female
+            </td>
+        </tr>
+        <tr>
+            <td><label>身份证号码：</label></td>
+            <td><input type="text" id="idnum" style="width: 200px"></td>
+        </tr>
+
+        <tr>
+            <td>    <label>详细地址：</label></td>
+            <td>    <input type="text" id="address" style="width: 200px">
+                <label>*具体到楼栋单元门牌号</label></td>
+        </tr>
+
+        <tr>
+            <td>    <label>地图坐标：</label></td>
+            <td>    <input type="text" id="addressmap" onfocusout="parseaddress()" style="width: 200px">
+                <label>*输入详细的地图可识别的地址</label></td>
+        </tr>
+        <tr>
+            <td>    <input type="text" id="addresspoint" hidden></input></td>
+            <td></td>
+        </tr>
+    </table>
+
+<div id="allmap" style="width: 300px;height: 300px; left: 20px"></div>
 </div>
 </form>
 </body>
